@@ -13,12 +13,10 @@ import java.util.ResourceBundle;
 import java.util.Vector;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
-import javax.swing.JTextArea;
 import javax.swing.border.EmptyBorder;
 
 import businessLogic.BLFacade;
 import domain.Card;
-import domain.Event;
 import exceptions.ErrorCreditCard;
 import exceptions.NoCardsStored;
 import exceptions.NotEnoughChuti;

@@ -6,9 +6,9 @@ package gui;
 
 
 import javax.swing.*;
-import domain.Event;
+
 import businessLogic.BLFacade;
-import configuration.UtilDate;
+
 
 import java.awt.Color;
 import java.awt.Font;
@@ -16,7 +16,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.Locale;
 import java.util.ResourceBundle;
-import java.util.Vector;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -26,7 +26,7 @@ public class UserMainGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	private JPanel jContentPane = null;
-	private JButton jButtonCreateQuery = null;
+
 	private JButton botonVerApuestas = null;
 
 	private BLFacade facade = PublicMainGUI.getBusinessLogic();
@@ -37,15 +37,13 @@ public class UserMainGUI extends JFrame {
 	private JPanel panel;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
 	private JMenuBar menuBar;
-	private JButton btnSignUp;
-	private JButton btnLogIn;
+
 	private JButton botonPanelUsuario;
-	private JButton btnDeleteUser;
+
 	private JFrame mainGui;
 	private JFrame padreFrame;
 	private JButton btnLogOut;
 	private JButton botonBuscarEvento;
-	private JButton botonCrearEvento;
 	private JButton btnCancelarApuesta;
 	private JButton boletos;
 

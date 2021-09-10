@@ -1,6 +1,6 @@
 package businessLogic;
 
-import java.util.Collection;
+
 import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -9,7 +9,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
-import javax.persistence.EntityExistsException;
 import javax.persistence.RollbackException;
 
 import configuration.ConfigXML;
@@ -18,7 +17,7 @@ import domain.Question;
 import domain.User;
 import domain.Apuesta;
 
-import domain.Boleto;
+
 
 import domain.Card;
 import domain.Equipo;

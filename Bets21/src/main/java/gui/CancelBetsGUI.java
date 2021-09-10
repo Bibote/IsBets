@@ -7,8 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.Serializable;
-import java.util.Date;
-import java.util.Properties;
+
 import java.util.ResourceBundle;
 import java.util.Vector;
 

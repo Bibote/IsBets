@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 import businessLogic.BLFacade;
@@ -26,7 +25,7 @@ public class VerEquiposGUI extends JFrame {
 	private String equipo;
 	private Equipo eq1;
 	private int temp;
-	private JTextField textTemporada;
+
 
 
 	public VerEquiposGUI(JFrame padre, String equipo, int temp) {

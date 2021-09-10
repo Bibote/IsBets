@@ -36,7 +36,6 @@ import exceptions.WrongDNI;
 import exceptions.WrongEmailPattern;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
-import javax.persistence.EntityExistsException;
 import javax.persistence.RollbackException;
 
 

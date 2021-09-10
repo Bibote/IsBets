@@ -1,24 +1,20 @@
 package gui;
 
-import java.text.DateFormat;
+
 import java.util.*;
 
 import javax.swing.*;
 
-import com.toedter.calendar.JCalendar;
+
 
 import java.awt.*;
 import java.awt.event.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 
 import businessLogic.BLFacade;
-import configuration.UtilDate;
-import domain.Event;
+
 import domain.Pronosticos;
 import domain.Question;
-import exceptions.EventFinished;
-import exceptions.QuestionAlreadyExist;
+
 
 public class FinalizarPronosticoGUI extends JFrame {
 	private static final long serialVersionUID = 1L;

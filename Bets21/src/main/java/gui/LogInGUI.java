@@ -8,7 +8,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import businessLogic.BLFacade;
-import domain.User;
 import exceptions.DifferentPasswords;
 import exceptions.UserDoesntExist;
 import exceptions.WrongDNI;

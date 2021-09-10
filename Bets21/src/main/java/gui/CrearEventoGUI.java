@@ -26,12 +26,10 @@ import businessLogic.BLFacade;
 import configuration.UtilDate;
 import dependencies.DateLabelFormatter;
 import domain.Equipo;
-import domain.Event;
 import exceptions.OldDateError;
 import exceptions.StringIsEmpty;
 import javax.swing.JButton;
 import javax.swing.JTextField;
-import javax.swing.JList;
 
 public class CrearEventoGUI extends JFrame {
 
