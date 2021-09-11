@@ -47,8 +47,6 @@ public class AdminMainGUI extends JFrame {
 	private JButton btnCerrarEvento;
 	private JButton btnCrearEquipo;
 	private JButton getBtnEditarEquipo;
-	private JButton botonPanelUsuario_1;
-	private JButton btnLogOut_1;
 
 
 	/**
@@ -362,10 +360,10 @@ public class AdminMainGUI extends JFrame {
 		return getBtnEditarEquipo;
 	}
 	private JButton getBotonPanelUsuario() {
-		if (botonPanelUsuario_1 == null) {
-			botonPanelUsuario_1 = new JButton("UserPanel");
+		if (botonPanelUsuario == null) {
+			botonPanelUsuario = new JButton("UserPanel");
 		}
-		return botonPanelUsuario_1;
+		return botonPanelUsuario;
 	}
 
 }
