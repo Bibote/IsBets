@@ -24,7 +24,7 @@ import org.jdatepicker.impl.JDatePanelImpl;
 import org.jdatepicker.impl.JDatePickerImpl;
 import org.jdatepicker.impl.UtilDateModel;
 
-import businessLogic.BLFacade;
+import business.logic.BLFacade;
 import dependencies.DateLabelFormatter;
 import domain.Apuesta;
 import domain.Event;

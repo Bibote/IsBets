@@ -15,7 +15,7 @@ import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import javax.swing.border.EmptyBorder;
 
-import businessLogic.BLFacade;
+import business.logic.BLFacade;
 import domain.Card;
 import exceptions.ErrorCreditCard;
 import exceptions.NoCardsStored;

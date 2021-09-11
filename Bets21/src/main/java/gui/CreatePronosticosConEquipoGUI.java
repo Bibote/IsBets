@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-import businessLogic.BLFacade;
+import business.logic.BLFacade;
 import domain.Equipo;
 import domain.Question;
 import exceptions.PreferencesNotChecked;

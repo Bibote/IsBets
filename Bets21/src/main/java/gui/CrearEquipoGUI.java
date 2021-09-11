@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import businessLogic.BLFacade;
+import business.logic.BLFacade;
 import domain.Equipo;
 import exceptions.EmptyNames;
 

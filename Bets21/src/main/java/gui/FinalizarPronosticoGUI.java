@@ -5,12 +5,10 @@ import java.util.*;
 
 import javax.swing.*;
 
-
+import business.logic.BLFacade;
 
 import java.awt.*;
 import java.awt.event.*;
-
-import businessLogic.BLFacade;
 
 import domain.Pronosticos;
 import domain.Question;

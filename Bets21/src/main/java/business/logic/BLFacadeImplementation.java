@@ -1,4 +1,4 @@
-package businessLogic;
+package business.logic;
 
 
 import java.util.Date;
@@ -55,13 +55,13 @@ import exceptions.WrongEmailPattern;
 public class BLFacadeImplementation  implements BLFacade {
 	DataAccess dbManager;
 	User user1;
-
+	String ini= "initialize";
 	public BLFacadeImplementation()  {		
 		System.out.println("Creating BLFacadeImplementation instance");
 		ConfigXML c=ConfigXML.getInstance();
 
-		if (c.getDataBaseOpenMode().equals("initialize")) {
-			dbManager=new DataAccess(c.getDataBaseOpenMode().equals("initialize"));
+		if (c.getDataBaseOpenMode().equals(ini)) {
+			dbManager=new DataAccess(c.getDataBaseOpenMode().equals(ini));
 			dbManager.initializeDB();
 			dbManager.close();
 		}
@@ -74,7 +74,7 @@ public class BLFacadeImplementation  implements BLFacade {
 		System.out.println("Creating BLFacadeImplementation instance with DataAccess parameter");
 		ConfigXML c=ConfigXML.getInstance();
 
-		if (c.getDataBaseOpenMode().equals("initialize")) {
+		if (c.getDataBaseOpenMode().equals(ini)) {
 			da.open(true);
 			da.initializeDB();
 			da.close();
@@ -519,7 +519,7 @@ public class BLFacadeImplementation  implements BLFacade {
 		double pagado = 0;
 		for(Apuesta a : q.getApuestas()) {
 
-			if (a.getPronostico().getPrognosticNumber() == p.getPrognosticNumber()) {
+			if (a.getPronostico().getPrognosticNumber().equals(p.getPrognosticNumber())) {
 				double chuti = a.getChutiGoles()*p.getPorcentaje();
 				dbManager.pagarUsuario(a.getUser(), a.getChutiGoles()*p.getPorcentaje());
 				pagado += chuti;

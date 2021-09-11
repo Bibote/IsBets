@@ -22,7 +22,8 @@ import javax.swing.table.DefaultTableModel;
 import org.jdatepicker.impl.JDatePanelImpl;
 import org.jdatepicker.impl.JDatePickerImpl;
 import org.jdatepicker.impl.UtilDateModel;
-import businessLogic.BLFacade;
+
+import business.logic.BLFacade;
 import configuration.UtilDate;
 import dependencies.DateLabelFormatter;
 import domain.Equipo;

@@ -4,7 +4,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JCheckBox;
 import javax.swing.JTextField;
-import businessLogic.BLFacade;
+
+import business.logic.BLFacade;
 import domain.User;
 import exceptions.UserDoesntExist;
 import exceptions.WrongDNI;

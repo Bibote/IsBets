@@ -14,7 +14,7 @@ import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
-import businessLogic.BLFacade;
+import business.logic.BLFacade;
 import domain.Equipo;
 import javax.swing.JLabel;
 import javax.swing.JTextField;

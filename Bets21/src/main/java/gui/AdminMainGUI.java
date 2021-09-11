@@ -6,8 +6,9 @@ package gui;
 
 
 import javax.swing.*;
+
+import business.logic.BLFacade;
 import domain.Event;
-import businessLogic.BLFacade;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -32,7 +33,7 @@ public class AdminMainGUI extends JFrame {
 	private JRadioButton rdbtnCastellano;
 	private JPanel panel;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
-	private JMenuBar menuBar;
+
 
 	private JButton botonPanelUsuario;
 	private JButton btnDeleteUser;
@@ -46,6 +47,8 @@ public class AdminMainGUI extends JFrame {
 	private JButton btnCerrarEvento;
 	private JButton btnCrearEquipo;
 	private JButton getBtnEditarEquipo;
+	private JButton botonPanelUsuario_1;
+	private JButton btnLogOut_1;
 
 
 	/**
@@ -62,7 +65,6 @@ public class AdminMainGUI extends JFrame {
 				try {
 					//if (ConfigXML.getInstance().isBusinessLogicLocal()) facade.close();
 				} catch (Exception e1) {
-					// TODO Auto-generated catch block
 					System.out.println("Error: "+e1.toString()+" , probably problems with Business Logic or Database");
 				}
 				System.exit(1);
@@ -90,6 +92,11 @@ public class AdminMainGUI extends JFrame {
 		// this.setSize(271, 295);
 
 		this.setSize(495, 290);
+		
+		JMenuBar menuBarra = new JMenuBar();
+		setJMenuBar(menuBarra);
+		menuBarra.add(getBotonPanelUsuario());
+		menuBarra.add(getBtnLogOut());
 		this.setContentPane(getJContentPane());
 		setTitle("Bets21");
 		this.mainGui = this;
@@ -125,7 +132,7 @@ public class AdminMainGUI extends JFrame {
 			jContentPane.add(getPanel());
 			jContentPane.add(getBtnCrearEquipo());
 			jContentPane.add(getBtnEditarEquipo());
-			setJMenuBar(getMenuBar_1());
+
 
 		}
 		return jContentPane;
@@ -244,25 +251,7 @@ public class AdminMainGUI extends JFrame {
 
 
 	
-	private JMenuBar getMenuBar_1() {
-		if (menuBar == null) {
-			menuBar = new JMenuBar();
 
-			botonPanelUsuario = new JButton("UserPanel");
-			botonPanelUsuario.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					PanelUsuarioGUI paUser = new PanelUsuarioGUI(mainGui);
-					paUser.setVisible(true);
-					setVisible(false);
-				}
-			});
-			menuBar.add(botonPanelUsuario);
-			menuBar.add(getBtnLogOut());
-			
-		
-		}
-		return menuBar;
-	}
 	
 	
 	
@@ -372,6 +361,13 @@ public class AdminMainGUI extends JFrame {
 		}
 		return getBtnEditarEquipo;
 	}
+	private JButton getBotonPanelUsuario() {
+		if (botonPanelUsuario_1 == null) {
+			botonPanelUsuario_1 = new JButton("UserPanel");
+		}
+		return botonPanelUsuario_1;
+	}
+
 }
  // @jve:decl-index=0:visual-constraint="0,0"
 

@@ -9,7 +9,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
-import businessLogic.BLFacade;
+
+import business.logic.BLFacade;
 import domain.Pronosticos;
 import domain.Question;
 import javax.swing.JLabel;

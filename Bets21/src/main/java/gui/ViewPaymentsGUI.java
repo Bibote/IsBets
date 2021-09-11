@@ -15,7 +15,7 @@ import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
-import businessLogic.BLFacade;
+import business.logic.BLFacade;
 
 public class ViewPaymentsGUI extends JFrame {
 

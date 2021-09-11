@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import businessLogic.BLFacade;
+import business.logic.BLFacade;
 import domain.Equipo;
 import javax.swing.JLabel;
 import java.awt.Font;
@@ -157,10 +157,10 @@ public class VerEquiposGUI extends JFrame {
 		lblPresidente.setText("Presidente: "+eq1.getPresidente());
 		lblEntrenador.setText("Entrenador: "+eq1.getEntrenador());
 		lblWeb.setText("Web: "+eq1.getWeb());
-		double jugados = eq1.getEvEmpates()+eq1.getEvGanados()+eq1.getEvPerdidos();
 		double ganados = eq1.getEvGanados();
 		double empatados = eq1.getEvEmpates();
 		double perdidos = eq1.getEvPerdidos();
+		double jugados =ganados+perdidos+empatados;
 		
 		lblPartidosJugados.setText("Partidos jugados: "+jugados);
 		lblPartidosGanados.setText("Partidos ganados: "+ganados);

@@ -25,7 +25,8 @@ import org.jdatepicker.impl.JDatePanelImpl;
 import org.jdatepicker.impl.JDatePickerImpl;
 import org.jdatepicker.impl.UtilDateModel;
 import com.toedter.calendar.JCalendar;
-import businessLogic.BLFacade;
+
+import business.logic.BLFacade;
 import configuration.UtilDate;
 import dependencies.DateLabelFormatter;
 import exceptions.OldDateError;
